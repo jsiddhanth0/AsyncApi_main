@@ -9,9 +9,9 @@ services:
     - ./target:/app:ro 
     environment:
       - PORT=5000
-      post:
-        always:
-          steps:
-            - script: curl http://localhost:8080/actuator/health  # Replace with your URL
+    post:
+      always:
+        steps:
+          - script: curl http://localhost:8080/actuator/health  # Replace with your URL
             retry: 3
             timeout: 30

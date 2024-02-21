@@ -33,7 +33,7 @@ public class controller1 {
 //	}
 	@GetMapping("/")
 	public CompletableFuture<String> H(){
-		return CompletableFuture.completedFuture("hiiiii");
+		return CompletableFuture.completedFuture("hiiiii from the build");
 	}
 //	"?"
 	@GetMapping("/hello")

@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-  my-spring-app:
+  asyncapi:
     build: .
     ports:
       - "5000:5000"

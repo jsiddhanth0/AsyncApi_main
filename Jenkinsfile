@@ -14,7 +14,7 @@ pipeline {
         stage("build image"){
             steps{
                 script{
-                    sh 'sudo docker-compose build -t jsiddhanth0/asyncapi .'
+                    sh 'sudo docker-compose build '
                     // sh 'sudo docker buildx build -t jsiddhanth0/asyncapi .'
                 }
             }

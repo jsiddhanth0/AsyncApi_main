@@ -3,7 +3,7 @@ version: "3.8"
 services:
   asyncapi:
     build: .
-    image: jsiddhanth0/asyncapi:latest
+    image: asyncapi:latest
     ports:
       - "5000:5000"
     volumes:

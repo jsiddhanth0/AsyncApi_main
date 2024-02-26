@@ -25,6 +25,7 @@ pipeline {
                     withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
                         sh 'sudo docker login -u jsiddhanth0 -p ${dockerhubpwd}'
                         sh 'sudo docker-compose push'
+                        echo 'changes made'
                     }
                     // sh 'sudo docker push jsiddhanth0/asyncapi '
                 }
